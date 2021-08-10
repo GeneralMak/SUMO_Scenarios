@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+		<vType id="passenger" vClass="passenger" length="6" color="0,255,255" carFollowModel="IDM" laneChangeModel="LC2013" minGap="0" minGapLat="0"/>
+		<vehicle id="0" type="passenger" depart="0" departPos="0" departSpeed="10" jmCrossingGap="0">
+			<route edges="WM ME" />
+		</vehicle>
+		
+		<person id="ped0" depart="0" departPos="86" departSpeed="2">
+			<walk edges="WM NM"/>
+		</person>
+		
+</routes>

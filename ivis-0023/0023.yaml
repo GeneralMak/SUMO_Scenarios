@@ -1,0 +1,49 @@
+#环境信息
+environment:
+    weather:"sunny"               #cloud/rain/rainy/sunny
+    lighting:"bright"             #bright/dark
+
+
+#道路信息
+road:
+    type: "crossroad"               #straightRoad/crossroad/ramp/highway/T-Road
+    shape:'straight'                #straight/curve
+    grade: "flat"                   #downhill/flat/uphill
+    material: "Asphalt"             #Asphalt/Cement/dirt
+    lanes: "2"                      #1-lane/2-lane/3-lane
+    direction: "2"                  #1-way/2-way/bidirectional
+    speed_limit: "13.8"             #default: 13.8, unit: m/s
+    traffic_light: "True"           #True/False
+    pavement:"False"                #True/False
+    
+    
+#Traffic participants
+obj:
+    obj1:
+            name: "0"
+            Type: "passenger"                   #passenger(default)/bicycle/moped/motorcycle/trailer/bus/pedestrian     
+            color: "255,255,0"
+            collision_type: "forward-impact*"   #rear-end/sideswipe/forward-impact/,  *:On behalf of the initiator of the accident
+            collision_side: "front"             #back/front/side
+            action: "swerve"                    #travel/emergency-braking/decelerate/accelerate/stop/swerve/change-lanes
+            traffic_light: "R"                  #G/R/Y; If there is no traffic light, the default is green
+            route: "WM MN"                      #trajectory
+            on-lane: "0"                        #Which lane is the vehicle driving on?
+            speed: "10"
+            #travel_dis: "100"                   #Distance from the location of access to the road network to the location of collision
+            
+            
+    obj2:
+            name: "1"
+            Type: "trailer"
+            color: "0,255,255"
+            collision_type: "forward-impact"
+            collision_side: "side"
+            action: "travel"
+            traffic_light: "G"
+            route: "EM MW"
+            on-lane: "0"
+            speed: "10"
+            #travel_dis: "100"   
+         
+ 

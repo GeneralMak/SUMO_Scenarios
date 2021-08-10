@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<routes >
+	<vType id="CarA" length="6" color="255,255,0" carFollowModel="IDM"  laneChangeModel="SL2015" minGap="0" minGapLat="0"/>
+	<vType id="obstacle" length="2" color="255,255,0" carFollowModel="IDM"  laneChangeModel="SL2015" minGap="0" minGapLat="0"/>
+	
+	
+	<vehicle id="0" type="CarA" depart="0" departPos="0" departSpeed="10" departLane="0">
+		<route edges="WM ME"/>
+	</vehicle>
+	
+	
+	<vehicle id="1" type="obstacle" depart="0" departPos="80" departSpeed="0" departLane="0">
+		<route edges="ME"/>
+		<stop lane="ME_0" endPos="80" until="1000"/>
+	</vehicle>
+</routes>

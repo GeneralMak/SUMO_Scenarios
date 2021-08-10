@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+		<vType carFollowModel="IDM" color="255,255,0" id="passenger" laneChangeModel="LC2013" length="6" minGap="0" minGapLat="0" vClass="passenger" />
+		<vType carFollowModel="IDM" color="0,255,255" id="trailer" laneChangeModel="LC2013" length="6" minGap="0" minGapLat="0" vClass="trailer" />
+		
+		<vehicle id="0" depart="0" departPos="50" departSpeed="10" type="passenger" departLane="1">
+			<route edges="WM MN" />
+			<stop lane="WM_1" endPos="-10" until="8.5"/>
+		</vehicle>
+		
+		<vehicle id="1" depart="0" departPos="0" departSpeed="10" type="trailer" departLane="1">
+			<route edges="SM MN" />
+		</vehicle>
+	
+	</routes>
